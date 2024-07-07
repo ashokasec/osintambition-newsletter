@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-open-sans{
+    font-family: "Open Sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.kshetra::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.331), #040b12), url("https://images.unsplash.com/photo-1698243282692-616402a5d535") center center no-repeat;
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #101010), url("https://images.unsplash.com/photo-1595520519880-a86c48ea536c?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D") center center no-repeat; */
+    background-size: cover;
+    z-index: -1;
+}
+
+#custom-substack-embed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+
+.custom-substack-widget.csw-theme-default {
+    border: none !important;
+    display: flex;
+    max-width: fit-content !important;
+}
+
+.custom-substack-widget.csw-theme-default input {
+    outline: none !important;
+    min-width: 200px !important;
+    max-width: 450px !important;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    display: block !important;
+    border: 1px solid rgba(229, 231, 235, 0.2) !important;
+    border-radius: 0.5rem !important;
+    font-size: 15px !important;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all 0.15s ease-in-out !important;
+    background-color: rgba(28, 28, 28, 0.5) !important;
+    color: #ffffff !important;
+}
+@media (width < 480px) {
+    .custom-substack-widget.csw-theme-default input {
+        max-width: 150px !important;
+    }
+}
+@media (width <= 1080px) {
+    .custom-substack-widget.csw-theme-default input {
+        width: 300px;
+    }
+}
+@media (width > 1080px) {
+    .custom-substack-widget.csw-theme-default input {
+        width: 450px;
+    }
+}
+
+.custom-substack-widget.csw-theme-default input::-webkit-input-placeholder {
+    color: #9ca3af !important;
+}
+
+input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+input:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.hero-subs button{
+    margin-left: 0px !important;
+}
+
+.custom-substack-widget.csw-theme-default button {
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    border-radius: 0.5rem !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: transparent !important;
+    background-color: #ffffff !important;
+    color: #2262db !important;
+    max-width: fit-content !important;
+    margin-left: 0.75rem !important;
+}
+
+button:hover {
+    background-color: #3498db;
+}
+
+button:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+@layer utilities{
+
+    
+
+    .lekh h3{
+        @apply text-2xl font-bricolage font-bold border-b pb-2 border-gray-300/10 mt-12
+    }
+    .lekh p{
+        @apply mb-8 font-normal mt-4 text-gray-300 lg:text-[17px] leading-relaxed
+    }
+}
