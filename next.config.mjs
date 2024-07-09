@@ -5,8 +5,6 @@ const nextConfig = {
           {
             protocol: 'https',
             hostname: 'substack-post-media.s3.amazonaws.com',
-            port: '',
-            pathname: '',
           },
         ],
       },
