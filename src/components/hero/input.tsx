@@ -5,7 +5,7 @@ import React, { useEffect } from 'react';
 const SubstackWidget = () => {
   useEffect(() => {
     window.CustomSubstackWidget = {
-      substackUrl: "chakravyu.substack.com",
+      substackUrl: "osintambition.substack.com",
       placeholder: "Enter your email",
       buttonText: "Subscribe",
     };
