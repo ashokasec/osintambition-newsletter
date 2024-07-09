@@ -8,13 +8,6 @@ const SubstackWidget = () => {
       substackUrl: "chakravyu.substack.com",
       placeholder: "Enter your email",
       buttonText: "Subscribe",
-    //   theme: "purple",
-    //   colors: {
-    //     primary: "#FFFFFF",
-    //     input: "#334155",
-    //     email: "#FFFFFF",
-    //     text: "#000000",
-    //   },
     };
 
     const script = document.createElement('script');

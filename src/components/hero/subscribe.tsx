@@ -7,8 +7,7 @@ export default function Subscribe() {
                 <div className="absolute inset-[0] -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#10479f_100%)]"></div>
                 <div className="flex items-center justify-center flex-col text-white max-w-full">
                     <h1 className="font-extrabold text-2xl md:text-[2.5rem] text-center">Get notified when we’re Publishing.</h1>
-                    <p className="text-[15px] md:text-lg w-[40rem] text-center font-light text-[#d1d5db] leading-relaxed mt-2 sm:mt-4 md:mt-6">Sign up to receive exclusive updates and be the first</p>
-                    <p className="text-[15px] md:text-lg w-[40rem] text-center font-light text-[#d1d5db] leading-relaxed mb-8">to know when we are Publishing!</p>
+                    <p className="text-sm md:text-lg w-full px-4 text-center font-light text-[#d1d5db] leading-normal md:leading-relaxed mt-4 sm:mt-4 md:mt-6 mb-6">Sign up to receive exclusive updates and be the first to know when we are Publishing!</p>
                 </div>
                 <div className="flex items-center space-x-3 z-10">
                     <SubstackWidget />

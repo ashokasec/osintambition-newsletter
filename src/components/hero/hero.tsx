@@ -7,7 +7,7 @@ export default function Hero() {
             <div className="max-w-[85rem] mx-auto px-4 xl:px-20 my-24 lg:my-48 sm:px-6 lg:px-8">
                 <div className="flex flex-col items-center">
                     <h1 className="block text-4xl font-bricolage font-bold text-white text-center lg:text-7xl lg:leading-tight">Essential <SparklesText text="Osint" className="inline !font-bold" sparklesCount={5} colors={{first: '#fff', second: '#0081ff'}} /> Updates Delivered to Your Inbox</h1>
-                    <p className="mt-3 text-lg text-center text-gray-300 px-6 lg:px-28">Don't miss out on the insights you need to excel in your intelligence gathering efforts and stay ahead in the world 🌏 of Open Source Intelligence.</p>
+                    <p className="mt-3 text-base lg:text-lg text-center text-gray-300 px-6 lg:px-28">Don&#39;t miss out on the insights you need to excel in your intelligence gathering efforts and stay ahead in the world 🌏 of Open Source Intelligence.</p>
                     <div className="mt-16 hero-subs">
                         <SubstackWidget />
                     </div>

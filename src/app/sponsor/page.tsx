@@ -5,6 +5,14 @@ import HowWePromote from '@/components/sponsor/how_we_promote'
 import PreviousSponsor from '@/components/sponsor/previous_sponsor'
 import WhyUs from '@/components/sponsor/why_us'
 import React from 'react'
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Become a Sponsor | Osint Ambition',
+    description: "Over the past year, our newsletter has grown into a trusted source of information, followed by thousands of enthusiasts and professionals alike.",
+    authors: [{ name: "Shivam Gupta", url: "https://ashokasec.com" }, { name: "Dheeraj Yadav", url: "https://in.linkedin.com/in/dheerajydv19" }, { name: "Swayam Nayak", url: "https://in.linkedin.com/in/swayamsopnic" }],
+    keywords: "sponsor, become a sponsor, osint, open source intelligence, osint ambition, osint newsletter, @ashokasec",
+  };
 
 const page = () => {
     return (

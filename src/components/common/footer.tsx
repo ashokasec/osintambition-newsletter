@@ -2,10 +2,10 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <footer className="mt-auto w-full py-6 px-48 mx-auto bg-background border-t border-gray-200/15 flex items-center justify-between">
-            <div className=' flex items-center'>
+        <footer className="mt-auto w-full py-6 px-6 lg:px-48 mx-auto bg-background border-t border-gray-200/15 flex flex-col md:flex-row items-center justify-between">
+            <div className='flex items-center'>
                 <div>
-                    <a className="flex-none text-xl font-semibold text-white" href="#" aria-label="Brand">Osint Ambition</a>
+                    <a className="flex-none text-base md:text-xl font-semibold text-white" href="#" aria-label="Brand">Osint Ambition</a>
                 </div>
                 <p className='border-l ml-4 pl-4 leading-none py-1 text-white'>2024 Osint Ambition Co.</p>
             </div>

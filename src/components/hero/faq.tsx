@@ -36,11 +36,11 @@ const FAQ = () => {
                 <div className="grid sm:grid-cols-2 gap-6 md:gap-12">
                     {
                         data.map((e: any, index: number) => (
-                            <div>
+                            <div key={index}>
                                 <h3 className="text-lg font-semibold text-gray-800 dark:text-neutral-200">
                                     {e.question}
                                 </h3>
-                                <p className="mt-2 text-gray-600 dark:text-neutral-400">
+                                <p className="mt-2 text-gray-600 text-[14px] lg:text-base dark:text-neutral-400">
                                     {e.answer}
                                 </p>
                             </div>

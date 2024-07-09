@@ -4,7 +4,6 @@ import { ChevronRight, Sparkles } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
-const clients = [OsintIndustries, UserSearch]
 const sponsors = [
     {
         imgSrc: OsintIndustries,
@@ -22,7 +21,7 @@ const SponsorCard = ({ image, alt, link }: { image: any, alt: string, link: stri
     return (
         <div className="bg-gray-300/5 rounded-xl p-5 w-full h-full flex flex-col justify-between">
             <figure className="w-6 md:w-10">
-            <Image src={image} layout="cover" alt={alt} />
+            <Image src={image} height={40} alt={alt} />
             </figure>
             <p className="sm:text-2xl text-lg font-bricolage font-bold mt-4 my-1 text-white leading-tight md:leading-normal">{alt}</p>
             <Link href={link} target="_blank" className="flex font-bricolage underline text-[14px] leading-none items-center text-[#30a2ff] font-semibold">Visit Website <span className="ml-1"><ChevronRight size={19} /></span></Link>
@@ -51,11 +50,11 @@ export default function Clients() {
                     <div className="bg-gray-300/5 rounded-xl p-5 w-full">
                         <Sparkles color="#fff" size={40} />
                         <p className="sm:text-2xl text-lg font-bricolage font-bold mt-4 my-1 text-white">Your Company</p>
-                        <Link href="/sponsor" target="_blank" className="flex font-bricolage underline text-[14px] leading-none items-center text-[#30a2ff] font-semibold">Visit Website <span className="ml-1"><ChevronRight size={19} /></span></Link>
+                        <Link href="/sponsor" className="flex font-bricolage underline text-[14px] leading-none items-center text-[#30a2ff] font-semibold">Visit Website <span className="ml-1"><ChevronRight size={19} /></span></Link>
                     </div>
                 </div>
 
-                <h3 className="text-gray-400 mt-12 text-lg">Proud Supporters of Osint Ambition | Thank You</h3>
+                <h3 className="text-gray-400 mt-12 text-[15px] md:text-lg text-center px-6">Proud Supporters of Osint Ambition | Thank You</h3>
             </div>
         </div>
 
