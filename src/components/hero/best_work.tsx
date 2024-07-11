@@ -23,7 +23,7 @@ const BestWork = async () => {
                     data.map((blog: any, index: number) => {
                         return (
                             <div className="flex flex-col flex-[1_0_0%] bg-neutral-900/20" key={index}>
-                                <Image src={blog.cover_image} loading='lazy' alt={`${blog.title}`} width={312} height={208} />
+                                <Image src={blog.cover_image} loading='lazy' alt={`${blog.title}`} width={312} height={208} className='w-full' />
                                 <div className="p-4 flex-1 md:p-5">
                                     <Link href={blog.canonical_url} title={blog.title}>
                                         <h3 className="text-lg font-bold text-gray-200">
